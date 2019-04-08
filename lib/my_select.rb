@@ -1,13 +1,13 @@
-def my_select(collection) 
-count = 0
-result = []
-
-while count < array.size
-  if yield(array[count]) == true
-  result.push(array[count])
-end
-  count+=1
-end
-result
+def my_select(collection)
+ i = 0
+ new_array=[]
+  while i < array.size
+    if yield(array[i]) == true
+    new_array.push(array[i])
+  
+    end
+    i+=1
+  end
+new_array
 end
 
