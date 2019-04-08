@@ -2,7 +2,6 @@ def my_select(collection)
  i = 0
  new_array=[]
   while i < array.size
-    block_given?
     if yield(array[i]) == true
     new_array.push(array[i])
     i+=1
