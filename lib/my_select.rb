@@ -3,8 +3,11 @@ def my_select(collection)
  new_array=[]
   while i < array.size
     block_given?
-   new_array.push yield(array[i])
-    i += 1
+    if yield(array[i]) == true
+    new_array.push(array[i])
+    i+=1
+    end
   end
 new_array
 end
+
